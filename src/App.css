@@ -1,0 +1,114 @@
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Logo */
+.img-nav {
+  display: flex;
+  align-items: center;
+}
+
+.img-nav img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-links .active {
+  color: #2563eb;
+}
+
+/* Login + Get Started */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.login {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login:hover {
+  color: #2563eb;
+}
+
+.get-started {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.get-started:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Middle heading */
+.navbar h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .nav-buttons {
+    gap: 10px;
+  }
+
+  .get-started {
+    padding: 9px 14px;
+  }
+}
+
